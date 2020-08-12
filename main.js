@@ -30,8 +30,10 @@ const express = require("express");
 const app = express();
 
 app.listen("/",function(req, res){
-  console.log(""Sever is running on port 3000"")
+  res.sendFile(__dirname + "/index.hetml");
+  console.log("Sever is running on port 3000")
 })
 app.listen(process.env.PORT||3000,function(req, res){
-  console.log(""Sever is running on port 3000"")
+  res.sendFile(__dirname + "/index.hetml");
+  console.log("Sever is running on port 3000")
 })
