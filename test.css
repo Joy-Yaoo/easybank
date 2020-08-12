@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  margin-top: 15px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper div{
+  border: 3px solid black;
+  margin: 5px;
+  top: 30px;
+  /* position: static; */
+}
