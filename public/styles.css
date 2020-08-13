@@ -72,6 +72,7 @@ body{
   margin: 0 auto;
 }
 .intro_section{
+  height: 670px;
   display: flex;
   padding-left: 50px;
   background-color: #fafafa;
@@ -79,7 +80,7 @@ body{
 }
 .intro_section .intro{
   width: 50%;
-  height: 100%;
+  height: auto;
   padding-left: 20px;
   padding-top: 200px;
 }
@@ -218,7 +219,7 @@ body{
   padding: 5% 10%;
 }
 .footer_section footer{
-  width: 80%;
+  width: 100%;
   display: grid;
   grid-template-areas: "social_media footer_menu1 footer_menu2 resbutton"
 }
@@ -256,7 +257,7 @@ body{
   transition: all 300ms;
 }
 .footer_section .footer3{
-  grid-area: resbutton1;
+  grid-area: resbutton;
   grid-row-start: 1;
 }
 .footer_section .footer3{
