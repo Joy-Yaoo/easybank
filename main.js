@@ -1,3 +1,16 @@
+const express = require("express");
+const app = express();
+
+app.listen("/",function(req, res){
+  console.log("Sever is running on port 3000")
+})
+app.listen(process.env.PORT || 3000,function(req, res){
+  console.log("Sever is running on port 3000")
+})
+app.get("/", function(req, res){
+  res.sendFile(__dirname + "/index.html")
+});
+
 var menu_button = document.getElementById("menu_button");
 var close_btn = document.getElementById("close_btn");
 var open_btn = document.getElementById("open_btn");
@@ -25,17 +38,3 @@ menu_button.addEventListener("click", function(){
     mobile_wrapper.classList.add("hide");
   }
 })
-
-const express = require("express");
-const app = express();
-
-app.listen("/",function(req, res){
-  res.sendFile(__dirname + "/index.hetml");
-  console.log("Sever is running on port 3000")
-})
-app.listen(process.env.PORT||3000,function(req, res){
-  console.log("Sever is running on port 3000")
-})
-app.get("/", function(req, res){
-  res.sendFile(__dirname + "/index.html")
-});
