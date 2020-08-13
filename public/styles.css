@@ -102,7 +102,7 @@ body{
 }
 .intro_section figure{
   width: 50%;
-  height: 100%;
+  height: auto;
   display: grid;
   grid-gap: 2px;
 }
@@ -308,6 +308,7 @@ body{
   }
   .intro_section figure{
     width: 80%;
+    height: auto;
     position: unset;
     display: flex;
   }
@@ -356,12 +357,13 @@ body{
   .article_section .articles{
     grid-template-columns: unset;
     grid-template-rows: auto auto auto auto;
+    padding: 0 5%;
   }
   .article_section article{
-    padding: 15px 90px;
+
   }
   .article_section .articles img{
-    width: 85%;
+    width: 100%;
     height: auto;
     text-align: center;
   }
