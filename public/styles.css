@@ -352,7 +352,7 @@ body{
 
 @media (max-width: 1000px){
   .article_section{
-    padding: 0px;
+    padding-left: 7%;
   }
   .article_section .articles{
     grid-template-columns: unset;
